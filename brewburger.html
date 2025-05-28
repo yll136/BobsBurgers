@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bob's Burgers Coffee Shop</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fff8f0;
+      color: #2c2c2c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #777;
+      margin-top: 0.5rem;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      width: 100%;
+      max-width: 1000px;
+    }
+    .item {
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .item:hover {
+      transform: translateY(-5px);
+    }
+    .item h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .item p {
+      color: #666;
+      font-size: 1rem;
+    }
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Brew Burger</h1>
+    <p>Start your morning right.</p>
+  </header>
+
+  <section class="menu">
+    <div class="item">
+      <h2>Morning Brew Burger</h2>
+      <p>Infused with a hint of espresso, topped with crispy bacon.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bob's Burgers Coffee Shop. All rights reserved.</p>
+  </footer>
+</body>
+</html>
