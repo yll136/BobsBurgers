@@ -72,6 +72,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font-size: 0.9rem;
       color: #aaa;
     }
+    .orderholder {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      width: 100%;
+      max-width: 1000px;
+    }
+    .orderbuttons {
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.2s;
+    }
   </style>
 </head>
 <body>
@@ -88,13 +103,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="item">
       <h2>Morning Brew Burger</h2>
       <p>Infused with a hint of espresso, topped with crispy bacon.</p>
+    </div>  
+  </section>
+
+  <section class="orderholder">
+    <div class="orderbuttons">
+        <br>
+        <br>
+        <form>
+          <input type="submit" value="Order">
+        </form>
     </div>
   </section>
-  <br>
-  <br>
-  <form>
-  <input type="submit" value="Order">
-  </form>
+
 
   <footer>
     <p>&copy; 2025 Bob's Burgers Coffee Shop. All rights reserved.</p>
