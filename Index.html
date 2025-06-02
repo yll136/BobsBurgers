@@ -28,28 +28,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-          }
-     .button-2 {
-      background-color: rgba(51, 51, 51, 0.05);
-      border-radius: 8px;
-      border-width: 0;
-      color: #333333;
-      cursor: pointer;
-      display: inline-block;
-      font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 20px;
-      list-style: none;
-      margin: 0;
-      padding: 10px 12px;
-      text-align: center;
-      transition: all 200ms;
-      vertical-align: baseline;
-      white-space: nowrap;
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
     }
     body {
       font-family: 'Helvetica Neue', sans-serif;
@@ -106,6 +84,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font-size: 0.9rem;
       color: #aaa;
     }
+    a.button {
+    padding: 1px 6px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    color: buttontext;
+    background-color: buttonface;
+    text-decoration: none;
+}
   </style>
 </head>
 <body>
@@ -129,7 +115,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2>Morning Brew Burger</h2>
       <p>Infused with a hint of espresso, topped with crispy bacon.</p>
       <br>
-      <a href="brewburger.html">Order</a>
+      <a href="brewburger.html" class="button">Order</a>
     </div>
     <div class="item">
       <h2>Veggie Delight</h2>
